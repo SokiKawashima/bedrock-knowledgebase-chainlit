@@ -1,0 +1,5 @@
+[UI.theme.dark]
+    [UI.theme.dark.primary]
+        main = "#1e90ff"
+        dark = "#1e90ff"
+        light = "#1e90ff"

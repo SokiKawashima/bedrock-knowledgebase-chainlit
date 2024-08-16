@@ -1,0 +1,18 @@
+FROM public.ecr.aws/docker/library/python:3.12-slim
+
+ENV PYTHONUNBUFFERED 1
+
+# Replace the values of AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY with your AWS credentials
+ENV AWS_ACCESS_KEY_ID=<<AWS_ACCESS_KEY_ID>>
+ENV AWS_SECRET_ACCESS_KEY=<<AWS_SECRET_ACCESS_KEY>>
+
+WORKDIR /app
+
+COPY ./Pipfile /app/
+COPY ./Pipfile.lock /app/
+RUN pip install pipenv
+RUN pipenv sync --system
+COPY . /app/
+EXPOSE 8080
+
+CMD ["python", "-m", "chainlit", "run", "app.py", "-h", "--port", "8080"]
