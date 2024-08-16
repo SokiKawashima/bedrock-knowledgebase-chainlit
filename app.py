@@ -40,7 +40,7 @@ async def main(message: cl.Message):
             "retrieveAndGenerateConfiguration": {
                 "type": "KNOWLEDGE_BASE",
                 "knowledgeBaseConfiguration": {
-                    "knowledgeBaseId": "JI0ENDTKOI",
+                    "knowledgeBaseId": "[YOUR_KNOWLEDGEBASE_ID",
                     "modelArn": "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0",
                     "retrievalConfiguration": {
                         "vectorSearchConfiguration": {"numberOfResults": 20},
