@@ -1,9 +1,16 @@
 # アプリ概要
-Chainlit 上の簡易的な RAG チャットアプリ
-AWS Bedrock の KnowledgeBase　を RAG の 本体として使用
+Chainlit上の簡易的な RAG チャットアプリ  
+AWS BedrockのKnowledgeBaseをRAGの本体として使用
 
-#　Get Started
-## デプロイ
+
+https://github.com/user-attachments/assets/86690837-4597-4d6d-88f2-f332fc7fd703
+
+
+# Get Started
+## KnowledgeBaseのリソースを作成
+[公式ドキュメント](https://docs.aws.amazon.com/ja_jp/bedrock/latest/userguide/knowledge-base-create.html)
+
+## デプロイ手順
 
 ### 前提条件
 デプロイには以下のソフトウェアがインストールされている必要があります．  
